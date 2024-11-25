@@ -30,9 +30,9 @@ app.get("/", async (req, res) => {
   } catch (error) {
     console.error("Error scraping jobs:", error);
     res.status(500).send("Error: Unable to retrieve job listings.");
-  } finally {
+  } /* finally {
     if (browser) await browser.close(); // Ensure the browser is closed
-  }
+  } */
 });
 
 // Start the server
