@@ -1,0 +1,47 @@
+[
+  {
+    "name": "datadome",
+    "value": "DA1LdEQt~83RaTAIDjJfaoCS8tqfj51yTQwv0aq_9SlhgHAlT~DXHcym0Vhijv2GIYVWZwbt93azoKt4ImY~IWvrnaU9kc20GIVakQ6wiGrbHMcQC6aDSTWuypW~seWQ",
+    "domain": ".jobagent.ch",
+    "path": "/",
+    "expires": 1763881508.432356,
+    "size": 136,
+    "httpOnly": false,
+    "secure": true,
+    "session": false,
+    "sameSite": "Lax",
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "_uc",
+    "value": "ad_storage=denied:analytics_storage=denied",
+    "domain": "www.jobagent.ch",
+    "path": "/",
+    "expires": 1734937508,
+    "size": 45,
+    "httpOnly": false,
+    "secure": true,
+    "session": false,
+    "sameSite": "None",
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "DF8B83FF13BBB95F2FC65B933E95BABB",
+    "domain": "www.jobagent.ch",
+    "path": "/",
+    "expires": -1,
+    "size": 42,
+    "httpOnly": true,
+    "secure": true,
+    "session": true,
+    "sameSite": "None",
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  }
+]

@@ -8,24 +8,33 @@
 </head>
 <body>
     <h1>Job Listings</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Company</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% jobs.forEach(job => { %>
+
+    <% if (jobs && jobs.length > 0) { %>
+        <table>
+            <thead>
                 <tr>
-                    <td><%= job.title %></td>
-                    <td><%= job.company %></td>
-                    <td><a href="<%= job.link %>" target="_blank">View Job</a></td>
+                    <th>Title</th>
+                    <th>Company</th>
+                    <th>Location</th>
+                    <th>Kununu Score</th>
+                    <th>Link</th>
                 </tr>
-            <% }); %>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                <% jobs.forEach(job => { %>
+                    <tr>
+                        <td><%= job.title %></td>
+                        <td><%= job.company %></td>
+                        <td><%= job.location %></td>
+                        <td><%= job.kununuScore || 'N/A' %></td>
+                        <td><a href="<%= job.link %>" target="_blank">View Job</a></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    <% } else { %>
+        <p>No jobs found. Please try again later.</p>
+    <% } %>
 </body>
 </html>
 
